@@ -60,4 +60,13 @@
     These collections are the result of a sorting process that is integral to Hadoop and which gathers all the datagrams with the same word together. 
     The reduce process gathers the datagrams inside a data node, and also gathers datagrams from the different data nodes
     into a final collection of datagrams where all the words are now unique, with their total frequency (number of occurrences).
+9.	Run the wordcount  and put the results in to a folder called Results:         
+
+    hadoop jar /home/hadoop/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar wordcount test.txt Results
+    
+    To observe the total execution time (real), include the word time:
+    time hadoop jar /home/hadoop/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar wordcount test.txt Results
+    
+    The time will be shown for real, user and sys, what does this refer to?
+
 
