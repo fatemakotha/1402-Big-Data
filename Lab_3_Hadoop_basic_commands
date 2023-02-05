@@ -40,3 +40,7 @@
 5.	Type:
     echo "To check this out, this is a test. This is only a test." >> ~/Data/Books/test.txt
 
+6.	Next type:
+    cat ~/Data/Books/test.txt 
+    What has happened?
+
