@@ -2,5 +2,8 @@
 2.	Start up Hadoop and the other processess, type:
     start-dfs.sh
     start-yarn.sh
+3.	Using the JDK's jps utility to see which Java processes are running, type in the terminal: 
+    jps
+    What is shown? 
 
 
