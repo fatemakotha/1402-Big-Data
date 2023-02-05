@@ -49,3 +49,15 @@
     Check that the data is in the HDFS
     hdfs dfs –ls
     hdfs dfs -cat test.txt
+8.	Hadoop comes with a set of demonstration programs. 
+    One of them is WordCount.java which will automatically compute the word frequency of all text files found in the HDFS directory you ask it to process.
+    The program has several sections:
+    •	The Map class takes lines of text that are fed to it (the text files are automatically broken down into lines by Hadoop), 
+    and breaks them into words. Outputs a datagram for each word that is a (String, int) tuple, of the form (“some-word", 1), 
+    since each tuple corresponds to the first occurrence of each word, so the initial frequency for each word is 1.
+    •	The reduce section gets collections of datagrams of the form [( word, n1 ), (word, n2)...] where all the words are the same, 
+    ut with different numbers. 
+    These collections are the result of a sorting process that is integral to Hadoop and which gathers all the datagrams with the same word together. 
+    The reduce process gathers the datagrams inside a data node, and also gathers datagrams from the different data nodes
+    into a final collection of datagrams where all the words are now unique, with their total frequency (number of occurrences).
+
