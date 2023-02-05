@@ -68,5 +68,37 @@
     time hadoop jar /home/hadoop/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar wordcount test.txt Results
     
     The time will be shown for real, user and sys, what does this refer to?
+    
+9.	Run the wordcount  and put the results in to a folder called Results:                                 
+hadoop jar /home/hadoop/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar wordcount test.txt Results
+To observe the total execution time (real), include the word time:
+time hadoop jar /home/hadoop/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar wordcount test.txt Results
+The time will be shown for real, user and sys, what does this refer to?
+
+10.	When mapreduce has finished, to get the Results directory type:
+
+    hdfs dfs –get  Results
+    Where has the Results directory been moved to?
+    
+11.	To read the file that has the results, cd to the Results directory and then type in the terminal :
+    
+    geany part-r-00000
+
+12.	From the terminal window delete test.txt and the Results directory.
+    
+    hdfs dfs –rmr Results
+    hdfs dfs –rm test.txt  
+13.	On the desktop go to the Datasets/Lab5 directory. There are a number of books downloaded from the Gutenberg repository:
+    The Outline of Science, Vol. 1 (of 4) by J. Arthur Thomson		(20417.txt)
+    The Notebooks of Leonardo Da Vinci 				(5000.txt)
+    The Art of War by 6th cent. B.C. Sunzi 				(132.txt)
+    The Adventures of Sherlock Holmes by Sir Arthur Conan Doyle 	(48320.txt)
+
+14.	Copy the files to the Books directory you created earlier
+
+15.	Choose one of the files and load it onto the HDFS
+
+16.	Check that the data has been loaded. 
+
 
 
