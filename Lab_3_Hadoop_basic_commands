@@ -1,1 +1,6 @@
-1) Open terminal by right clicking on the desktop icon
+1. Open terminal by right clicking on the desktop icon
+2.	Start up Hadoop and the other processess, type:
+    start-dfs.sh
+    start-yarn.sh
+
+
