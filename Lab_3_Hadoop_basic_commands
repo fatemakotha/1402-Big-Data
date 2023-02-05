@@ -100,5 +100,18 @@ The time will be shown for real, user and sys, what does this refer to?
 
 16.	Check that the data has been loaded. 
 
+17.	Run the word count example as before (Hadoop will create the output folder (Results), so if you supply a folder that already exists Hadoop will fail).
+
+18.	Repeat steps 14-17 with a different book. 
+
+
+Shutting down the VM
+
+i) Stop hadoop as follows: 
+
+stop-yarn.sh
+stop-dfs.sh
+
+Wait for the hadoop processes to stop.
 
 
