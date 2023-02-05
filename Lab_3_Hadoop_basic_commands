@@ -30,3 +30,5 @@
 
 4.	Inspect the file system. Then type:
     mkdir -p ~/Data/Books
+    What is shown?
+    A test.txt file is made in Desktop/~/Data/Books folder
