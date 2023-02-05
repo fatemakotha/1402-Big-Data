@@ -4,6 +4,16 @@
     start-yarn.sh
 3.	Using the JDK's jps utility to see which Java processes are running, type in the terminal: 
     jps
+    
     What is shown? 
+    2624 NodeManager
+    42259 Jps
+    2086 NameNode
+    2370 SecondaryNameNode
+    2521 ResourceManager
+    2209 DataNode
+    
+    Explain the difference between Local filesystem and Distributed filesystem (see lecture notes)
+
 
 
