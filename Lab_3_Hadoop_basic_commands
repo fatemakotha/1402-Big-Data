@@ -32,3 +32,7 @@
     mkdir -p ~/Data/Books
     What is shown?
     A test.txt file is made in Desktop/~/Data/Books folder
+
+5.	Type:
+    echo "To check this out, this is a test. This is only a test." >> ~/Data/Books/test.txt
+
