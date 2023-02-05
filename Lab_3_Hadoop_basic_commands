@@ -14,6 +14,17 @@
     2209 DataNode
     
     Explain the difference between Local filesystem and Distributed filesystem (see lecture notes)
+    A. Local File System (LFS) :
+    The basic file system of Linux operating system is termed as Local file system. It stores any data file as it is in single copy.
+    It stores data files in Tree format. Here, any user can access data files directly. LFS does not Replicate the data blocks. 
+    It always used for storing and processing personal data(small data).
 
-
+    B. Distributed File System (DFS) :
+    When we need to store and process a large data file (approx 1 TB size file at least), the Local file system of Operating system is not appropriate. 
+    In such cases we use Distributed File system. 
+    It can be created on any Linux operating system with Hadoop. DFS stores any data file by dividing it into several blocks.
+    This file system works on Master-Slave format where Master is NameNode and DataNodes are the slaves. 
+    All the blocks of a Data file is stored into different DataNodes and the location is only known by NameNode. 
+    Every Data Block is replicated into different Datanodes to avoid data loss when any datanode fails. 
+    In DFS Data files are directly not accessible to any user because only NameNode knows where the Data blocks of Data file are stored.
 
