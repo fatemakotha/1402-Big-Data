@@ -28,3 +28,5 @@
     Every Data Block is replicated into different Datanodes to avoid data loss when any datanode fails. 
     In DFS Data files are directly not accessible to any user because only NameNode knows where the Data blocks of Data file are stored.
 
+4.	Inspect the file system. Then type:
+    mkdir -p ~/Data/Books
