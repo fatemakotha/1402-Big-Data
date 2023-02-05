@@ -44,3 +44,8 @@
     cat ~/Data/Books/test.txt 
     What has happened?
 
+7.	Upload your your data to Hadoop using the put command.
+    hdfs dfs -put ~/Data/Books/test.txt 
+    Check that the data is in the HDFS
+    hdfs dfs –ls
+    hdfs dfs -cat test.txt
