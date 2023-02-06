@@ -16,3 +16,6 @@
 4.	Change directory into your workspace directory (if you don’t have a workspace directory then starting Eclipse will create one for you)
      cd ../workspace
 
+5.	Copy the Lab6 directory from Datasets into your workspace directory
+6.	Change current directory to the workspace/Lab6 directory
+7.	Open the WordCount.java file using Geany or Eclipse
