@@ -1,1 +1,18 @@
+1.	Enter the following URL in Google Chrome
+
+	  https://classroom-vc.gre.ac.uk
+
+	  Launch the Hadoop VM image, following the instructions from last week’s lab.
+
+2.	Once the Hadoop desktop has loaded, right click on the desktop and start a terminal
+
+3.	At the command prompt type:
+
+    start-dfs.sh
+    start-yarn.sh
+	
+     to start Hadoop.
+     
+4.	Change directory into your workspace directory (if you don’t have a workspace directory then starting Eclipse will create one for you)
+     cd ../workspace
 
