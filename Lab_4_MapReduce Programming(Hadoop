@@ -114,10 +114,14 @@ OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException
 
 •	Open WordCount.java in Eclipse (or Geany) and save it to a new file called HashTagCount.java
 •	You will need to change the class name to HashTagCount and also the change parts of the main(…) method as follows:
-JobConf conf = new JobConf(HashTagCount.class);
-conf.setJobName("hashtagcount");
+
+		JobConf conf = new JobConf(HashTagCount.class);
+		conf.setJobName("hashtagcount");
+		
 •	You will need to change the map(…) function to count occurrences of particular hashtags. You can use the startsWith() method of the java String class to detect hashtags. E.g.
-if(token.startsWith("#")){…}
+		
+		if(token.startsWith("#")){…}
+		
 •	The Reduce class can be left as it is
 •	You can compile, package and run you code using similar commands to those used for the WordCount example above.
 •	There is a data file called hashtags.txt in the Lab6 folder for you to test your code on.
