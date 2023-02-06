@@ -82,3 +82,8 @@ OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException
 
 }
 
+8.	Create a directory for the compiled WordCount classes
+
+	mkdir wc_classes
+
+
