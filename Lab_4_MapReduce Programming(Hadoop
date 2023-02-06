@@ -85,5 +85,10 @@ OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException
 8.	Create a directory for the compiled WordCount classes
 
 	mkdir wc_classes
-
+	
+9.	MapReduce programming in Java uses a number of libraries. Compile the WordCount.java file using libraries from the Hadoop  Java API as follows:
+	
+	javac -classpath $HADOOP_HOME/share/hadoop/common/hadoop-common-2.4.1.jar:$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.4.1.jar:$HADOOP_HOME/share/hadoop/common/lib/hadoop-annotations-2.4.1.jar -d wc_classes WordCount.java
+	
+	You can copy this command line from the java_command_line.txt file contained in the Lab6 folder
 
