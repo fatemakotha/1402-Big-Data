@@ -91,4 +91,22 @@ OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException
 	javac -classpath $HADOOP_HOME/share/hadoop/common/hadoop-common-2.4.1.jar:$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.4.1.jar:$HADOOP_HOME/share/hadoop/common/lib/hadoop-annotations-2.4.1.jar -d wc_classes WordCount.java
 	
 	You can copy this command line from the java_command_line.txt file contained in the Lab6 folder
+	
+10.	Package the compiled classes into a jar file
+
+	jar -cvf wordcount.jar -C wc_classes/ .
+	
+11.	Put the test.txt file from last week’s Lab  onto the HDFS if it is not already there
+	
+	hdfs dfs –put test.txt
+	
+12.	Run the word count map reduce job using following in the command line:
+	
+	hadoop jar wordcount.jar WordCount test.txt output
+	
+13.	Check the results of the Word Count MapReduce, by copying the output directory from the HDFS to your local file system
+	
+	hdfs dfs –get output
+	
+14.	Try running Word Count on some of the books from Lab 5 (last week’s lab).
 
